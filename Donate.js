@@ -134,7 +134,32 @@
 // }
 
 
+// function for Noakhali starts here
 
-document.getElementById("closeAlert").addEventListener("click", function() {
-    document.getElementById("donationAlert").classList.add("hidden");
-});
+// function for Noakhali starts here
+
+// function for Noakhali starts here
+
+document.getElementById('add-donate').addEventListener('click', function(event){
+    event.preventDefault();
+    // console.log('added the money')
+    const addMoney = getInputFieldById('input-add-money');
+    const myBalance = getTotalBalance('my-balance');
+    // console.log(addMoney, myBalance);
+    if (typeof addMoney === "number" && addMoney > 0 && myBalance >= addMoney){
+        
+        const myTotalBalance = (myBalance - addMoney).toFixed(2) ;
+        document.getElementById('my-balance').innerText = myTotalBalance ;
+        const balance = getTextFieldById('account-balance');
+        // console.log(balance, addMoney);
+        const newBalance = balance + addMoney;
+        document.getElementById('account-balance').innerText = newBalance;
+    }
+    else{
+        alert("Failed to add money");
+    }
+})
+// function for Noakhali ends here
+// document.getElementById("closeAlert").addEventListener("click", function() {
+//     document.getElementById("donationAlert").classList.add("hidden");
+// });

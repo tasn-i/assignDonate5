@@ -33,7 +33,9 @@
       <div class="flex-1 justify-end">
         <span class="text-xl font-semibold flex items-center">
           <img src="assets/coin.png" alt="Donate Bangladesh Logo" class="h-8 mr-2"/>
-          <i class="fas fa-coins text-yellow-500 mr-2"></i><span id="balanceAmount">8000 BDT</span>
+          <i class="fas fa-coins text-yellow-500 mr-2"></i><span id="balanceAmount">
+            <div id="my-balance">8000 BDT</div>
+          </span>
         </span>
       </div>
     </nav>
@@ -70,9 +72,9 @@
                         <img
                           src="./assets/coin.png"
                           alt="">
-                        <div id="account-balance">
-                          5500 BDT
-                        </div>
+                          <div id="account-balance">
+                            500 BDT
+                          </div>
                       </a>
                     </div>
                     <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
@@ -83,7 +85,7 @@
                         placeholder="Write Donation Amount" type="text" name="Donation" />
                     </div>
                     <div class="card-actions justify-end">
-                        <button id="noakhali-donation-btn" class="btn bg-[#B4F461] w-full" > Donate Now </button>
+                        <button id="add-donate" class="btn bg-[#B4F461] w-full" > Donate Now </button>
                     </div>
                   </div>
                 </div>
@@ -109,11 +111,11 @@
                     </div>
                     <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
                     <p> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
-                    <input
+                    <input id="input-add-money"
                       class=" placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-3 pl-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
                       placeholder="Write Donation Amount" type="text" name="Donation" />
                     <div class="card-actions justify-end">
-                        <button id="noakhali-donation-btn" class="btn bg-[#B4F461] w-full" > Donate Now </button>
+                        <button id="add-donate" class="btn bg-[#B4F461] w-full" > Donate Now </button>
                     </div>
                   </div>
                 </div>
@@ -139,11 +141,11 @@
                     </div>
                     <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
                     <p> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
-                    <input
+                    <input id="input-add-money"
                       class=" placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-3 pl-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
                       placeholder="Write Donation Amount" type="text" name="Donation" />
                       <div class="card-actions justify-end">
-                        <button id="noakhali-donation-btn" class="btn bg-[#B4F461] w-full" > Donate Now </button>
+                        <button id="add-donate" class="btn bg-[#B4F461] w-full" > Donate Now </button>
                     </div>
                   </div>
                 </div>
@@ -170,7 +172,7 @@
           </section> -->
 
       </main>
-      <div id="donationAlert" class="hidden fixed z-50 inset-0">
+      <!-- <div id="donationAlert" class="hidden fixed z-50 inset-0">
         <div class="flex items-center justify-center min-h-screen bg-gray-500 bg-opacity-65 transition-all">
             <div class="flex flex-col items-center justify-center bg-white py-8 px-28 border gap-5 rounded-xl">
                 <h1 class="text-5xl font-bold">Congrats</h1>
@@ -181,7 +183,10 @@
 
             </div>
         </div>
-    </div>
-    <script src="script.js"></script>
+    </div> -->
+    <script src="uitilizes.js"></script>
+    <script src="Donate.js"></script>
+    <!-- <script src="script.js"></script> -->
+
   </body>
 </html>
