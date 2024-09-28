@@ -17,7 +17,6 @@ function getTotalBalance(id){
 }
 
 
-j
 // function showSectionById(id){
 //     document.getElementById('show-add-donation').classList.add('hidden');
 //     document.getElementById('show-add-history').classList.add('hidden');
@@ -25,7 +24,8 @@ j
 // }
 
 function showSectionById(id){
-    document.getElementById('show-add-donation').classList.add('hidden');
-    document.getElementById('show-add-history').classList.add('hidden');
+    document.getElementById('show-donation-page').classList.add('hidden');
+    document.getElementById('show-history-page').classList.add('hidden');
+    // document.getElementById(id).classList.remove('hidden');
     document.getElementById(id).classList.remove('hidden');
 }

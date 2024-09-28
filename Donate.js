@@ -49,6 +49,21 @@ document.getElementById('add-Feni').addEventListener('click', function(event){
         // console.log(balance, addFeniMoney);
         const newBalance = balance + addFeniMoney;
         document.getElementById('account-Feni-balance').innerText = newBalance;
+
+        // add to history
+        const history = document.createElement('history');
+        history.innerHTML = `
+            <div class=" p-8 border rounded-2xl mb-4">
+                <h3 class="text-xl font-bold mb-4">${addFeniMoney} Donate for Flood Relief in Feni,Bangladesh</h3>
+                <p class="text-[#111111b3]">Date: ${Date()}</p>
+            </div>
+        `;
+        // console.log(history);
+
+        // show be a common function
+        document.getElementById('history-containeer').appendChild(history);
+
+
     }
     else{
         alert("Failed to add money");
@@ -71,6 +86,21 @@ document.getElementById('add-Quota').addEventListener('click', function(event){
         // console.log(balance, addQuotaMoney);
         const newBalance = balance + addQuotaMoney;
         document.getElementById('account-Quota-balance').innerText = newBalance;
+
+        // add to history
+        const history = document.createElement('history');
+        history.innerHTML = `
+            <div class=" p-8 border rounded-2xl mb-4">
+                <h3 class="text-xl font-bold mb-4">${addQuotaMoney} Aid for Injured in the Quota Movement</h3>
+                <p class="text-[#111111b3]">Date: ${Date()}</p>
+            </div>
+        `;
+        // console.log(history);
+
+        // show be a common function
+        document.getElementById('history-containeer').appendChild(history);
+
+
     }
     else{
         alert("Failed to add money");
