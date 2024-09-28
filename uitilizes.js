@@ -18,8 +18,8 @@ function getTotalBalance(id){
 
 
 
-// function showSectionById(id){
-//     document.getElementById('show-home-page').classList.add('hidden');
-//     document.getElementById('show-blog-page').classList.add('hidden');
-//     document.getElementById(id).classList.remove('hidden');
-// }
+function showSectionById(id){
+    document.getElementById('show-add-donation').classList.add('hidden');
+    document.getElementById('show-add-history').classList.add('hidden');
+    document.getElementById(id).classList.remove('hidden');
+}

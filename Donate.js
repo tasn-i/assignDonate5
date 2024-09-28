@@ -14,6 +14,19 @@ document.getElementById('add-donate').addEventListener('click', function(event){
         // console.log(balance, addMoney);
         const newBalance = balance + addMoney;
         document.getElementById('account-balance').innerText = newBalance;
+
+        // add to history
+        const history = document.createElement('history');
+        history.innerHTML = `
+            <div class=" p-8 border rounded-2xl mb-4">
+                <h3 class="text-xl font-bold mb-4">${addMoney} Taka is Donate for Flood at Noakhali, Bangladesh</h3>
+                <p class="text-[#111111b3]">Date: ${Date()}</p>
+            </div>
+        `;
+        // console.log(history);
+
+        // show be a common function
+        document.getElementById('history-containeer').appendChild(history);
     }
     else{
         alert("Failed to add money");
