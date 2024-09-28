@@ -17,6 +17,12 @@ function getTotalBalance(id){
 }
 
 
+j
+// function showSectionById(id){
+//     document.getElementById('show-add-donation').classList.add('hidden');
+//     document.getElementById('show-add-history').classList.add('hidden');
+//     document.getElementById(id).classList.remove('hidden');
+// }
 
 function showSectionById(id){
     document.getElementById('show-add-donation').classList.add('hidden');
