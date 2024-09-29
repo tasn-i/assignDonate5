@@ -27,6 +27,10 @@ document.getElementById('add-donate').addEventListener('click', function(event){
 
         // show be a common function
         document.getElementById('history-containeer').appendChild(history);
+
+        my_modal_1.showModal();
+
+        
     }
     else{
         alert("Failed to add money");
@@ -63,6 +67,7 @@ document.getElementById('add-Feni').addEventListener('click', function(event){
         // show be a common function
         document.getElementById('history-containeer').appendChild(history);
 
+        my_modal_1.showModal();
 
     }
     else{
@@ -100,6 +105,7 @@ document.getElementById('add-Quota').addEventListener('click', function(event){
         // show be a common function
         document.getElementById('history-containeer').appendChild(history);
 
+        my_modal_1.showModal();
 
     }
     else{
